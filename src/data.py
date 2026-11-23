@@ -1,0 +1,1 @@
+"""Carga y validación de los datos del proyecto (pendiente de implementar)."""

@@ -1,0 +1,20 @@
+data:
+  raw_red: data/raw/winequality-red.csv
+  raw_white: data/raw/winequality-white.csv
+  separator: ";"
+
+target:
+  quality_threshold: 7
+
+split:
+  test_size: 0.2
+  random_state: 42
+  stratify: true
+
+model:
+  name: random_forest
+  n_estimators: 300
+  class_weight: balanced
+
+output:
+  model_path: models/wine_model.joblib
